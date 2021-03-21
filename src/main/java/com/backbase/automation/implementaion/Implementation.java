@@ -17,7 +17,7 @@ public class Implementation extends Elements{
 	PostPage postPage = new PostPage();
 	ProfilePage profilePage = new ProfilePage();
 
-	public void doLogin() {
+	public void doLogintoBBLogSite() {
 
 		try {
 			Thread.sleep(3000);

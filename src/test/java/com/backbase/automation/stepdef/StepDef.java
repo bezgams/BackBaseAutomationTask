@@ -11,27 +11,27 @@ public class StepDef{
 	Implementation impl=new Implementation();
 	Elements element=new Elements();
 	
-	@Given("^I navigate to Application$")
+	@Given("^I navigate and login to BaseBack website$")
 	public void i_NavigateToApplication() throws Throwable {
-		Base.navigateToApplicationUrl();
+		Base.navigateAndLoginToBackBaseSite();
 	}
 	
-	@And("^I login into the Application$")
+	@And("^I login into the BBlog website$")
 	public void doLoginToApplication(){
-		impl.doLogin();
+		impl.doLogintoBBLogSite();
 	}
 
-	@And("^I clicked profile and ReadMore$")
+	@And("^I click on  my profile and ReadMore button for created article$")
 	public void clickedProfileAndReadMore(){
 		impl.clickedProfileandReadMore();
 	}
 
-	@And("^I read details in the post$")
+	@And("^I read the article details$")
 	public void readDetailsInThePost(){
 		impl.readArticleDetails();
 	}
 
-	@And("^I entered details in the post$")
+	@And("^I create an article$")
 	public void EnteredDetailsInThePost(){
 		impl.doCreateArticle();
 	}
@@ -41,24 +41,19 @@ public class StepDef{
 		impl.doLogOut();
 	}
 
-	@And("^I edited details in the post$")
+	@And("^I edit the created article details$")
 	public void editedDetailsInThePost(){
 		impl.editArticleDetails();
 	}
 
 
-	@And("I deleted details in the post$")
+	@And("I delete the created article$")
    public void deletedDetails(){
            impl.deleteArticle();
 			}
 	
 
-	@And("^I click on signout$")
-	public void verifyElementInHomePage() throws InterruptedException{
-		Thread.sleep(1000);
-		impl.doLogOut();
-	}
-	
+
 	
 	
 	

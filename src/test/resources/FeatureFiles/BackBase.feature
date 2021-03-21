@@ -1,15 +1,15 @@
 Feature: CRUD Article on BBlog website
 
 Scenario: CRUD(Create,Read,Update,Delete) article
-Given I navigate to Application
-And I login into the Application
-And I entered details in the post
-Then I clicked profile and ReadMore
-And I read details in the post
-Then I clicked profile and ReadMore
-And I edited details in the post
-Then I clicked profile and ReadMore
-Then I deleted details in the post
+Given I navigate and login to BaseBack website
+Then I login into the BBlog website
+And I create an article
+And I click on  my profile and ReadMore button for created article
+And I read the article details
+And I click on  my profile and ReadMore button for created article
+And I edit the created article details
+And I click on  my profile and ReadMore button for created article
+Then I delete the created article
 Then I logged out
 
 

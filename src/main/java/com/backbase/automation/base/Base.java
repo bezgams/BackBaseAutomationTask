@@ -128,7 +128,7 @@ public class Base
 		
 	}
 	
-	public static void navigateToApplicationUrl() throws InterruptedException, AWTException {
+	public static void navigateAndLoginToBackBaseSite() throws InterruptedException, AWTException {
 
         Base.driver.get(Base.reader.geApplicationUrl());
 
